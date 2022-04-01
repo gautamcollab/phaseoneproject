@@ -5,6 +5,7 @@ let btn = document.getElementById('btn')
 let list = document.getElementById('list')
 let submit = document.getElementById('quotetext')
 let form = document.getElementById('form')
+let btn3 = document.getElementById('btn3')
 
 btn.addEventListener('click', () => {
     const request = async () => {
@@ -16,22 +17,19 @@ btn.addEventListener('click', () => {
     }
     request()
 })
-// btn.addEventListener('click', () => {
-//     const request = async () => {
-//         let req = await fetch('https://api.kanye.rest/')
-//         let res = await req.json()
-//         let li = document.createElement('li')
-//         li.innerText = res.quote    
-//         list.append(li)
-//     }
-//     request()
-// })
+
 form.addEventListener('submit', (e) => {
     e.preventDefault() 
-    let h1 = document.createElement('h1')
-    h1.innerText = form.value
-
+    let li = document.createElement('li')
+    li.innerText = submit.value
+    q.append(li)
     console.log(submit.value)
+})
+
+btn3.addEventListener('click', () => {
+    let reaction = document.createElement('li')
+    reaction.innerText = "Kanye loved that too"
+    q.append(reaction)
 })
 
 
