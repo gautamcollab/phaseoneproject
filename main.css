@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://www.worldatlas.com/r/w1200/upload/70/32/73/shutterstock-310887800.jpg');
+    background-size: cover;
+}
+
+header {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.quote {
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+}
+
+.section2{
+    display: grid;
+    grid-template: 10%/90%;
+    float: right;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+quote {
+    background-color: white;
+}
